@@ -5,6 +5,7 @@ import pandas as pd
 def search_all_files(base_dir, varname):
     for root, dirs, files in os.walk(base_dir):
         for file in files:
+
             if file.endswith('.sav') or file.endswith('.csv'):
                 filepath = os.path.join(root, file)
                 try:
